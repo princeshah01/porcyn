@@ -1,10 +1,8 @@
-import { RainbowButton } from "~/components/ui";
-
-import { SearchButton } from "../../ui/search-button";
+import { RainbowButton, SearchButton } from "~/components/ui";
 
 export function Hero() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <section className="w-full min-h-[calc(100vh-3rem)] border-b border-border/80 flex flex-col items-center justify-center text-center px-6">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
         Dig Deeper. Learn Smarter. Build Better.
       </h1>
