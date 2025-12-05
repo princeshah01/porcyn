@@ -68,5 +68,12 @@ export default defineConfig([
       "no-undef": "off",
     },
   },
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+    "node_modules/**",
+    "src/components/ui/**/*",
+  ]),
 ]);
