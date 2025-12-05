@@ -1,5 +1,5 @@
 import { CtrlIcon, SearchIcon } from "~/assets/svg";
-import { cn } from "~/utils";
+import { cn } from "~/lib";
 import React from "react";
 
 export type SearchButtonProps =

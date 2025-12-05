@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState, useCallback } from "react";
 import { flushSync } from "react-dom";
 import { Sun, Moon } from "lucide-react";
-import { cn } from "~/utils";
+import { cn } from "~/lib";
 
 export const ThemeToggler = () => {
   const { theme, setTheme, systemTheme } = useTheme();

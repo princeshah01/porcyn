@@ -13,7 +13,7 @@ import {
   CommandList,
 } from "~/components/ui";
 import { LucideIcon, SearchIcon } from "lucide-react";
-import { cn } from "~/utils";
+import { cn } from "~/lib";
 
 export type CommandItem = {
   id: string;

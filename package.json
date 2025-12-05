@@ -19,6 +19,7 @@
     "cmdk": "^1.1.1",
     "lucide-react": "^0.555.0",
     "next": "16.0.7",
+    "next-theme": "^0.1.5",
     "next-themes": "^0.4.6",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -53,5 +54,17 @@
     "src/**/*.{css,md}": [
       "prettier --write"
     ]
+  },
+  "packageManager": "npm@10.3.1",
+  "overrides": {
+    "eslint": "$eslint",
+    "eslint-config-next": "$eslint-config-next",
+    "eslint-config-prettier": "$eslint-config-prettier",
+    "eslint-config-standard": "$eslint-config-standard",
+    "eslint-plugin-import": "$eslint-plugin-import",
+    "eslint-plugin-n": "$eslint-plugin-n",
+    "eslint-plugin-promise": "$eslint-plugin-promise",
+    "eslint-plugin-tailwindcss": "$eslint-plugin-tailwindcss",
+    "tailwindcss": "$tailwindcss"
   }
 }
