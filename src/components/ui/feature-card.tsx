@@ -17,7 +17,7 @@ export function FeatureCard({
   return (
     <div
       className={cn(
-        "flex flex-col gap-6 h-64 items-center p-6 hover:bg-muted/30 border border-border/80 transition-colors duration-200",
+        "flex flex-col gap-6 h-64 items-center p-6 hover:bg-muted/30 transition-colors duration-200",
         className,
       )}
     >
