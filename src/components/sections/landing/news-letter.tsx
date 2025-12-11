@@ -16,7 +16,7 @@ export function NewsLetterSignup() {
           laugh at a bug, or find your next job. Developers before you took the
           leap. Respect.
         </p>
-        <form action={subscribeAction} method="POST" className="mt-8">
+        <form action={subscribeAction} className="mt-8">
           <div className="flex gap-2">
             <Input
               name="email"
