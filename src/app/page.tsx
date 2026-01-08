@@ -1,5 +1,5 @@
-import { LandingPage } from "../components/sections/landing";
+import { LandingPage } from "~/components/sections/landing";
 
-export default function Page() {
-  return LandingPage();
+export default async function Page() {
+  return <LandingPage />;
 }

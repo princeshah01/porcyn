@@ -1,4 +1,4 @@
-export const featuresData = [
+export const FEATURESDATA = [
   {
     icon: "/features/lightning.svg",
     title: "Instant AI Answers",

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { RainbowButton, SearchButton } from "~/components/ui";
 
 export function Hero() {
@@ -14,7 +16,9 @@ export function Hero() {
       </p>
 
       <div className="flex flex-col-reverse md:flex-row gap-4 mt-8 items-center justify-center">
-        <RainbowButton className="w-full md:w-fit">Ask Question</RainbowButton>
+        <RainbowButton asChild className="w-full md:w-fit">
+          <Link href="/sign-in">Ask Question</Link>
+        </RainbowButton>
         <SearchButton />
       </div>
     </section>

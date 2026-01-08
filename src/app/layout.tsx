@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
 import React from "react";
 
+import { auth } from "~/auth";
 import { Toaster } from "~/components/ui";
 import "./globals.css";
 
@@ -30,27 +32,31 @@ export const metadata: Metadata = {
   Porcyn brings everything together in one smart, connected space`,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth();
+  console.log("Session in RootLayout:", session);
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        cz-shortcut-listen="true"
-        className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+      <SessionProvider session={session}>
+        <body
+          cz-shortcut-listen="true"
+          className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
         >
-          <Toaster />
-          {children}
-        </ThemeProvider>
-      </body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Toaster />
+            {children}
+          </ThemeProvider>
+        </body>
+      </SessionProvider>
     </html>
   );
 }

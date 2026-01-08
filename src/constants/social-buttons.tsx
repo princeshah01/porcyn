@@ -1,16 +1,16 @@
 import { GoogleIcon, GithubIcon } from "~/assets/svg";
 
-const socialButtons = [
+const SOCIAL_AUTH_PROVIDERS = [
   {
-    name: "GitHub",
+    name: "github",
     icon: <GithubIcon className="rounded-lg size-5" />,
     label: "Login with GitHub",
   },
   {
-    name: "Google",
+    name: "google",
     icon: <GoogleIcon className="rounded-lg size-5" />,
     label: "Login with Google",
   },
 ];
 
-export { socialButtons };
+export { SOCIAL_AUTH_PROVIDERS };
